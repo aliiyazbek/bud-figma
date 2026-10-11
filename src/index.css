@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Plus Jakarta Sans', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  /* requirement text quoted from the Arabic proposal */
+  --font-arabic: 'IBM Plex Sans Arabic', 'Segoe UI', Tahoma, sans-serif;
+
+  /* BUD-inspired palette (not an official brand guide) */
+  --color-navy-950: #07111f;
+  --color-navy-900: #0a1b30;
+  --color-navy-850: #0d223b;
+  --color-navy: #102945;
+  --color-navy-700: #1b3a5e;
+  --color-navy-600: #2a4c75;
+  --color-navy-100: #e6ecf4;
+  --color-navy-50: #f0f4f9;
+  --color-crimson: #a51f2b;
+  --color-crimson-600: #8e1a24;
+  --color-crimson-400: #d2434f;
+  --color-crimson-50: #fbedee;
+  --color-ivory: #f5f6f8;
+  --color-line: #e3e6eb;
+  --color-ink: #0e1a2b;
+  --color-muted: #5b6779;
+  --color-subtle: #8a94a3;
+  --color-success: #1f8a5b;
+  --color-success-400: #3fbf86;
+  --color-success-50: #e8f5ee;
+  --color-warning: #c8932b;
+  --color-warning-400: #e2b456;
+  --color-warning-50: #fbf4e6;
+  --color-sky: #8fb8e8;
+  --color-mist: #c9d6e6;
+  --color-gallery: #1a1d23;
+
+  --radius-card: 1rem;
+  --shadow-card: 0 1px 2px rgb(16 41 69 / 0.06), 0 8px 24px -12px rgb(16 41 69 / 0.18);
+  --shadow-float: 0 24px 60px -20px rgb(7 17 31 / 0.55);
+
+  --animate-pulse-ring: pulse-ring 1.4s ease-out infinite;
+
+  @keyframes pulse-ring {
+    0% {
+      transform: scale(0.85);
+      opacity: 0.9;
+    }
+    100% {
+      transform: scale(1.35);
+      opacity: 0;
+    }
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-gallery);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'cv11', 'ss01';
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-pulse-ring {
+    animation: none;
+  }
+}

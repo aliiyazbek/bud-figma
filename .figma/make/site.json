@@ -1,0 +1,10 @@
+{
+  "description": "Streamline university management with an integrated digital platform that enhances student experiences, administrative efficiency, and academic connectivity.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
