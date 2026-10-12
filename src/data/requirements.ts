@@ -34,6 +34,22 @@ export const screenReqs: Record<string, { purpose: string; reqs: Req[] }> = {
     purpose: 'Billing, collections and outstanding balances across faculties for the Finance Office.',
     reqs: r(['FR-FIN-02', 'Automatic semester invoices'], ['FR-FIN-11', 'Financial reports'], ['FR-FIN-07', 'Student account statement'], ['FR-FIN-05', 'Recorded cashier and bank payments']),
   },
+  W08: {
+    purpose: 'Student Affairs inbox: incoming student requests with status, priority and time window, ready to claim or review.',
+    reqs: r(['FR-STU-04', 'Major transfer requests with approval'], ['FR-EXM-10', 'Grade appeals within a deadline'], ['FR-GRD-02', 'Document requests with status'], ['FR-REG-08', 'Late registration exceptions']),
+  },
+  W09: {
+    purpose: 'One student request, a course exemption, reviewed with its attached documents, internal notes and an approve or reject decision.',
+    reqs: r(['FR-ACA-08', 'Course equivalency from prior study'], ['FR-STU-02', 'Student documents attached to the file']),
+  },
+  W10: {
+    purpose: 'The approval route a request follows, step by step with who acted and when, plus the automation rules applied to it.',
+    reqs: r(['FR-ACA-08', 'Exemption approval route'], ['FR-SYS-01', 'Who and when for every step'], ['FR-COM-02', 'Notification on status change']),
+  },
+  W11: {
+    purpose: "A professor's weekly timetable with rooms, teaching load and today's classes, plus a way to message enrolled students.",
+    reqs: r(['FR-SCH-04', 'Instructor weekly timetable'], ['FR-HR-02', 'Assigned courses and teaching load'], ['FR-HR-03', 'Office hours on the timetable'], ['FR-LMS-04', 'Announcements to enrolled students']),
+  },
   M01: {
     purpose: "Maya's day at a glance: next class, alerts and every campus service one tap away.",
     reqs: r(['FR-COM-02', 'Push notifications'], ['FR-SCH-04', 'Next lecture from personal timetable'], ['FR-COM-01', 'Targeted announcements'], ['FR-MAP-04', 'Next lecture linked to map']),

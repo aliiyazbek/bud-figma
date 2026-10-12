@@ -93,6 +93,10 @@ const adminNav: { code: ScreenCode; label: string; icon: ReactNode; group: strin
   { code: 'W05', label: 'Grade Approval', icon: <ClipboardCheck size={18} />, group: 'Academic' },
   { code: 'W06', label: 'Transport', icon: <Bus size={18} />, group: 'Services' },
   { code: 'W07', label: 'Finance', icon: <Landmark size={18} />, group: 'Services' },
+  { code: 'W08', label: 'Staff Inbox', icon: <ClipboardCheck size={18} />, group: 'Workflow' },
+  { code: 'W09', label: 'File Review', icon: <Search size={18} />, group: 'Workflow' },
+  { code: 'W10', label: 'Routing', icon: <Bell size={18} />, group: 'Workflow' },
+  { code: 'W11', label: 'My Schedule', icon: <CalendarRange size={18} />, group: 'Academic' },
 ]
 
 export function AdminShell({
@@ -111,7 +115,7 @@ export function AdminShell({
   user?: { name: string; role: string; initials: string }
 }) {
   const { screen, go } = useNav()
-  const groups = ['Executive', 'Academic', 'Services']
+  const groups = ['Executive', 'Academic', 'Services', 'Workflow']
   return (
     <div className="relative flex h-[1080px] w-[1920px] overflow-hidden bg-ivory text-ink">
       <aside className="relative flex w-[280px] shrink-0 flex-col bg-navy text-white">

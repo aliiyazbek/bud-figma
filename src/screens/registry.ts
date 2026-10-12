@@ -9,6 +9,10 @@ import W04 from './web/W04'
 import W05 from './web/W05'
 import W06 from './web/W06'
 import W07 from './web/W07'
+import W08 from './web/W08'
+import W09 from './web/W09'
+import W10 from './web/W10'
+import W11 from './web/W11'
 import M01 from './mobile/M01'
 import M02 from './mobile/M02'
 import M03 from './mobile/M03'
@@ -41,6 +45,10 @@ const base: Omit<ScreenDef, 'purpose' | 'reqs'>[] = [
   { code: 'W05', name: 'Grade Approval', kind: 'web', audience: 'Dean', Component: W05 },
   { code: 'W06', name: 'Transport Operations', kind: 'web', audience: 'Transport', Component: W06 },
   { code: 'W07', name: 'Finance Overview', kind: 'web', audience: 'Finance', Component: W07 },
+  { code: 'W08', name: 'Staff Inbox', kind: 'web', audience: 'Staff', Component: W08 },
+  { code: 'W09', name: 'File Review', kind: 'web', audience: 'Staff', Component: W09 },
+  { code: 'W10', name: 'Workflow Routing', kind: 'web', audience: 'Staff', Component: W10 },
+  { code: 'W11', name: 'Professor Schedule', kind: 'web', audience: 'Faculty', Component: W11 },
   { code: 'M01', name: 'Student Home', kind: 'mobile', audience: 'Student', Component: M01 },
   { code: 'M02', name: 'Course Registration', kind: 'mobile', audience: 'Student', Component: M02 },
   { code: 'M03', name: 'Weekly Schedule', kind: 'mobile', audience: 'Student', Component: M03 },
